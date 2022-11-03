@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:online_doctor_appointment/widget/doctor_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -141,27 +142,33 @@ class _HomePageState extends State<HomePage> {
                       SizedBox(
                         height: 10,
                       ),
-                      Container(
-                        height: 50,
-                        width: 250,
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 143, 206, 144),
-                            borderRadius: BorderRadius.circular(18)),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Text(
-                              "Find Doctor",
-                              style: GoogleFonts.prompt(
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            ),
-                            Icon(
-                              Icons.arrow_forward_ios,
-                              color: Colors.white,
-                            )
-                          ],
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => DoctorList()));
+                        },
+                        child: Container(
+                          height: 50,
+                          width: 250,
+                          decoration: BoxDecoration(
+                              color: Color.fromARGB(255, 143, 206, 144),
+                              borderRadius: BorderRadius.circular(18)),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Text(
+                                "Find Doctor",
+                                style: GoogleFonts.prompt(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                              Icon(
+                                Icons.arrow_forward_ios,
+                                color: Colors.white,
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
@@ -208,36 +215,42 @@ class _HomePageState extends State<HomePage> {
                         height: 10,
                       ),
                       Text(
-                        "StaringFrom 50 tk",
+                        "Staring from \$50",
                         style: TextStyle(
                             fontSize: 18,
-                            color: Colors.black,
+                            color: Color.fromARGB(255, 72, 105, 73),
                             fontWeight: FontWeight.bold),
                       ),
                       SizedBox(
                         height: 10,
                       ),
-                      Container(
-                        height: 50,
-                        width: 250,
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 143, 206, 144),
-                            borderRadius: BorderRadius.circular(18)),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Text(
-                              "Book Appointment",
-                              style: GoogleFonts.prompt(
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            ),
-                            Icon(
-                              Icons.arrow_forward_ios,
-                              color: Colors.white,
-                            )
-                          ],
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => DoctorList()));
+                        },
+                        child: Container(
+                          height: 50,
+                          width: 250,
+                          decoration: BoxDecoration(
+                              color: Color.fromARGB(255, 86, 147, 218),
+                              borderRadius: BorderRadius.circular(18)),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Text(
+                                "Book Appointment",
+                                style: GoogleFonts.prompt(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                              Icon(
+                                Icons.arrow_forward_ios,
+                                color: Colors.white,
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],

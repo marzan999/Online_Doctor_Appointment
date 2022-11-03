@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_doctor_appointment/widget/homepage.dart';
+import 'package:online_doctor_appointment/widget/lastpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: LastPage(),
     );
   }
 }
