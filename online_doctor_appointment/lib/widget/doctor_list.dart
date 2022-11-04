@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:online_doctor_appointment/model/data.dart';
+import 'package:online_doctor_appointment/widget/list.dart';
 
 class DoctorList extends StatefulWidget {
   const DoctorList({super.key});
@@ -150,22 +151,23 @@ class _DoctorListState extends State<DoctorList> {
                           ),
                       itemCount: a.length),
                 ),
-                Container(
-                  margin: EdgeInsets.all(15),
-                  height: 240,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25),
-                      color: Color.fromARGB(255, 243, 243, 243)),
-                ),
-                Container(
-                  margin: EdgeInsets.only(left: 15, right: 15),
-                  height: 240,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25),
-                      color: Color.fromARGB(255, 243, 243, 243)),
-                )
+                // Container(
+                //   margin: EdgeInsets.all(15),
+                //   height: 240,
+                //   width: double.infinity,
+                //   decoration: BoxDecoration(
+                //       borderRadius: BorderRadius.circular(25),
+                //       color: Color.fromARGB(255, 243, 243, 243)),
+                // ),
+                // Container(
+                //   margin: EdgeInsets.only(left: 15, right: 15),
+                //   height: 240,
+                //   width: double.infinity,
+                //   decoration: BoxDecoration(
+                //       borderRadius: BorderRadius.circular(25),
+                //       color: Color.fromARGB(255, 243, 243, 243)),
+                // )
+                DoctorInfo()
               ],
             ),
           ),
