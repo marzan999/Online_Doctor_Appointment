@@ -151,22 +151,6 @@ class _DoctorListState extends State<DoctorList> {
                           ),
                       itemCount: a.length),
                 ),
-                // Container(
-                //   margin: EdgeInsets.all(15),
-                //   height: 240,
-                //   width: double.infinity,
-                //   decoration: BoxDecoration(
-                //       borderRadius: BorderRadius.circular(25),
-                //       color: Color.fromARGB(255, 243, 243, 243)),
-                // ),
-                // Container(
-                //   margin: EdgeInsets.only(left: 15, right: 15),
-                //   height: 240,
-                //   width: double.infinity,
-                //   decoration: BoxDecoration(
-                //       borderRadius: BorderRadius.circular(25),
-                //       color: Color.fromARGB(255, 243, 243, 243)),
-                // )
                 DoctorInfo()
               ],
             ),
