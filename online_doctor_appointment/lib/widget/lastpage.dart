@@ -82,7 +82,7 @@ class LastPage extends StatelessWidget {
                         height: 60,
                         width: 60,
                         decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 145, 211, 147),
+                            color: Color.fromARGB(255, 86, 147, 218),
                             borderRadius: BorderRadius.circular(15)),
                         child: Icon(Icons.video_call_outlined),
                       ),
