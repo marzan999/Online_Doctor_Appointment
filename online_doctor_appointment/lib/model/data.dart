@@ -1,14 +1,14 @@
 class Doctor {
   String title;
   String name;
-  String occa;
+  String designation;
   String star;
   String img;
   String price;
   String feetile;
 
-  Doctor(this.title, this.name, this.occa, this.price, this.star, this.feetile,
-      this.img);
+  Doctor(this.title, this.name, this.designation, this.price, this.star,
+      this.feetile, this.img);
 
   static List<Doctor> generatedList() {
     return [

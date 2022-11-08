@@ -54,7 +54,7 @@ class _DoctorInfoState extends State<DoctorInfo> {
                               height: 5,
                             ),
                             Text(
-                              a[contex].occa,
+                              a[contex].designation,
                               style: GoogleFonts.roboto(fontSize: 20),
                             ),
                             SizedBox(
